@@ -1,0 +1,368 @@
+* {
+	-webkit-box-sizing: border-box;	
+	   -moz-box-sizing: border-box;
+		    box-sizing: border-box;
+}
+
+body {
+	background: url('../images/background.png'); /*attribution*/
+	background-color: rgba(190, 149, 37, 0.07);
+	background-blend-mode: darken;
+	font-family: 'Lato', sans-serif;
+}
+
+.container-fluid {
+	background-color: white;
+/*	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);*/
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+
+.col-xs-12 {
+text-align: center;
+}
+
+
+.img-border,
+.story-block img {
+	border: 1px solid #1D5779;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    margin: 15px 0;
+    background-image: -webkit-linear-gradient(left, rgba(29,87,121,0),rgba(29,87,121,0.75), rgba(29,87,121,0.95), rgba(29,87,121,0.75), rgba(29,87,121,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(29,87,121,0),rgba(29,87,121,0.75), rgba(29,87,121,0.95), rgba(29,87,121,0.75), rgba(29,87,121,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(29,87,121,0),rgba(29,87,121,0.75), rgba(29,87,121,0.95), rgba(29,87,121,0.75), rgba(29,87,121,0)); 
+    background-image:      -o-linear-gradient(left, rgba(29,87,121,0),rgba(29,87,121,0.75), rgba(29,87,121,0.95), rgba(29,87,121,0.75), rgba(29,87,121,0)); 
+}
+
+.header-top {
+	text-align: center;
+	background-color: #1D5779;
+	margin: 0 -15px;
+	padding: 10px;
+	color: white;
+}
+
+/*TODO - adjust image diminsions*/
+
+img#logo {
+	width: 100%;
+	margin: 10px 0;
+	border: none;
+}
+
+.cta {
+	background-color: #BE4A25;
+	margin: -5px;
+	padding: 5px;
+}
+
+.cta span:first-child {
+	font-weight: bolder;
+}
+
+nav ul {
+	padding: 0;
+	text-align: center;
+}
+
+nav li {
+	text-decoration: none;
+	display: inline-block;
+	margin: 2px;
+	text-align: center;
+}
+
+nav li a {
+	width: 170px;
+	padding: 3px;
+	height: 30px;
+	font-size: 1.25em;
+	display: inline-block;
+	font-weight: bold;
+	background-color: #BE9525;
+	text-decoration: none;
+}
+
+/*TODO - learn use case for active and difference between hover and focus and updates; and boxes change sizes in different states*/
+
+nav li a:link,
+nav li a:visited,
+a:link.button-body,
+a:visited.button-body {
+	color: white;
+}
+
+nav li a:hover,
+nav li a:focus,
+a:hover.button-body,
+a:focus.button-body {
+	background-color: #7B5E0C;
+}
+
+nav li a:active,
+a:active.button-body {
+	color: white;
+	border: 2px solid #BE9525;
+}
+
+nav li a:focus,
+a:focus.button-body {
+	border: 2px solid #BE9525;
+}
+
+
+.main p {
+	text-align: center;
+}
+
+.button-wrapper {
+	display: block;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.button {
+	padding: 5px 5px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+.button-body {
+	background-color: #BE9525;
+	font-size: 1em;
+}
+
+.story-block {
+	margin: 1em;
+	position: relative;
+}
+
+.story-block img {
+	width: 100%;
+	max-width: 400px;
+}
+
+
+.story-block span {
+	position: absolute;
+	bottom: 10px;
+	width: 94%;
+	max-width: 376px;
+	margin-left: -47%;
+	left: 50%;
+	padding: 7px;
+	display: block;
+	background-color: rgba(9, 53, 79, 0.75);
+	color: white;
+	font-size: 1.45em;
+	font-weight: bolder;
+}
+
+footer {
+	background-color: #BE9525;
+	border-top: solid 5px #09354f;
+	padding: 10px 0;
+	margin: 15px -15px 0;
+}
+
+footer h3 {
+	margin-left: 30px;
+}
+
+footer div {
+	margin: 15px 0;
+}
+
+.contact-info span {
+	display: block;
+	text-align: left;
+}
+
+div.map,
+div.office-exterior {
+	text-align: center;
+}
+
+img#office-exterior {
+	width: 90%;
+}
+
+iframe.map {
+	width: 90%;
+	height: 400px;
+}
+
+
+/*
+
+SUBPAGE SYTLES
+
+*/
+
+
+nav.sub-nav ul {
+	background-color: inherit;
+	margin: 15px 0;
+}
+
+nav.sub-nav li a {
+	height: 25px;
+	font-size: 1em;
+	background-color: #1D5779;
+}
+
+nav.sub-nav li a:hover,
+nav.sub-nav li a:focus {
+	background-color: #27485B;
+}
+
+nav.sub-nav li a:active {
+	color: white;
+	border: 2px solid #1D5779;
+}
+
+nav.sub-nav li a:focus {
+	border: 2px solid #1D5779;
+}
+
+.plan {
+	margin: 15px;
+}
+
+.body-img {
+	width: 250px;
+	margin: auto;
+}
+
+.subpage h3,
+.subpage p {
+	text-align: left;
+}
+
+
+nav a.current {
+	background-color: #8E7838; 
+}
+
+nav.sub-nav a.current {
+	background-color: #436072; 
+}
+
+/*TODO - match these and bootstraps media query sizes*/
+@media (min-width: 768px) {
+
+	.story-block span {
+		position: relative;
+		top: 100%;
+		width: 100%;
+		padding: 10px;
+		background-color: rgba(9, 53, 79, 1);
+		color: white;
+		font-size: 1.25em;
+		font-weight: bold;
+		margin: 0;
+		left: 0;
+		bottom: inherit;
+	}
+
+}
+
+@media (min-width: 815px) {
+
+	.hide-lg {
+		display: none;
+	}
+
+	.container-fluid {
+		max-width: 1020px;
+	}
+
+	.header-top {
+		text-align: left;
+		position: relative;
+		padding-left: 20px;
+	}
+
+	img#logo {
+		width: 600px;
+	}
+
+	.cta {
+		position: absolute;
+		right: 0;
+		top: 21px;
+		padding: 10px;
+	}
+
+	.cta span {
+		display: block;
+		margin: 2px 0;
+	}
+
+	nav ul {
+		margin: 0 -15px;
+		background-color: #BE9525;
+	}
+
+	.main,
+	.main-home {
+		width: 1020px;
+		height: 300px;
+		margin: 0 -15px;
+		position: relative;
+		background-color: #dec47c;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-image: url(../images/img.gif);
+	}
+
+	.main p {
+		width: 1020px;
+		height: 50px;
+		background-color: rgba(123,94,12,0.65);
+		margin-left: -15px;
+		color: white;
+		font-weight: bold;
+		font-size: 1.2em;
+		padding: 10px;
+		position: relative;
+		top: 70%;
+		text-align: left;
+	}
+
+	a:hover.button-body,
+	a:focus.button-body {
+		background-color: #8E7838;
+	}
+
+	.button-wrapper {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.button-body {
+		font-size: .9em;
+	}
+
+	.contact-info,
+	.office-exterior {
+	margin-top: 0;
+	}
+
+	.contact-info {
+	position: absolute;
+	top: 100%;
+	}
+
+	img#office-exterior {
+		width: 100%;
+	}
+
+	iframe.map {
+		width: 100%;
+	}
+}
